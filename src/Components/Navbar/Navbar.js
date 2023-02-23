@@ -23,7 +23,7 @@ const Navbar = () => {
                         <li><Link>Submenu 2</Link></li>
                         </ul>
                     </li>
-                    <li><Link>Item 3</Link></li>
+                    <li><Link to="/shop">Shop</Link></li>
                     </ul>
                     <div className="form-control">
                     <input type="text" placeholder="Search" className="input input-bordered" />
