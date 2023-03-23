@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import payment from '../../assets/images/payment-getways.png';
 
 const Footer = () => {
     return (
@@ -40,9 +41,12 @@ const Footer = () => {
                 </footer>
                 <footer className="footer footer-center p-4 bg-base-300 text-base-content">
                 <div>
-                    <p>Copyright © 2022 - All right reserved by Hardware</p>
+                    <p>Copyright © 2022 - All right reserved by Hardware</p> 
+                    <img src={payment} alt="payment gateway" className='text-end'/>
                 </div>
+                
                 </footer>
+                
         </div>
     );
 };

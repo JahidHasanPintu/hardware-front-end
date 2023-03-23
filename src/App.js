@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './Components/Footer/Footer';
+import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Navbar from './Components/Navbar/Navbar';
 import Shop from './Components/Shop/Shop';
@@ -8,6 +9,7 @@ import Shop from './Components/Shop/Shop';
 function App() {
   return (
     <div className="App bg-slate-50">
+      <Header/>
       <Navbar/>
       <Routes>
         
