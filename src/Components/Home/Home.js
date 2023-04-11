@@ -6,6 +6,7 @@ import Features from '../Features/Features';
 import NewsLetter from '../NewsLetter/NewsLetter';
 import PopularSale from '../PopularSale/PopularSale';
 import TrendySales from '../TrendySales/TrendySales';
+import NewArrival from '../NewArrival/NewArrival';
 
 
 const Home = () => {
@@ -99,6 +100,7 @@ const Home = () => {
                 
                 </div>
                 <Brands/>
+                <NewArrival/>
                 <PopularSale/>
                 <NewsLetter/>
              {/* <Categories/> */}
