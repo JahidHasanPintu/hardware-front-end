@@ -8,6 +8,8 @@ import PrivacyPolicy from './Components/Pages/PrivacyPolicy/PrivacyPolicy';
 import Contact from './Components/Pages/Contact/Contact';
 import Faq from './Components/Pages/Faq/Faq';
 import About from './Components/Pages/About/About';
+import Checkout from './Components/Pages/Checkout/Checkout';
+import ProductDetails from './Components/ProductDetails/ProductDetails';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/faq" element={<Faq/>}></Route>
         <Route path="/about" element={<About/>}></Route>
+        <Route path="/checkout" element={<Checkout/>}></Route>
+        <Route path="/product-details" element={<ProductDetails/>}></Route>
 
       </Routes>
       <Footer/>
