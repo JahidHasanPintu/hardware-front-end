@@ -1,9 +1,16 @@
 import React from 'react';
+import productImg1 from '../../assets/products/product-img-1.jpg';
+import productImg2 from '../../assets/products/product-img-2.jpg';
+import productImg3 from '../../assets/products/product-img-3.jpg';
+import productImg4 from '../../assets/products/product-img-4.jpg';
+import productImg5 from '../../assets/products/product-img-5.jpg';
+import productImg6 from '../../assets/products/product-img-6.jpg';
+import productImg7 from '../../assets/products/product-img-7.jpg';
 
 const ProductDetails = () => {
     return (
         <div>
-            <div class="single-product-wrapper w-full ">
+            <div class="single-product-wrapper w-11/12 mx-auto text-start">
                 <div class="product-view-main-wrapper bg-white pt-[30px] w-full">
                     <div class="breadcrumb-wrapper w-full ">
                         <div class="container-x mx-auto">
@@ -16,15 +23,15 @@ const ProductDetails = () => {
                             <div class="product-view w-full lg:flex justify-between ">
                                 <div data-aos="fade-right" class="lg:w-1/2 xl:mr-[70px] lg:mr-[50px] aos-init aos-animate">
                                     <div class="w-full">
-                                        <div class="w-full h-[600px] border border-qgray-border flex justify-center items-center overflow-hidden relative mb-3"><img src="/assets/images/product-details-1.png" alt="" class="object-contain"/>
+                                        <div class="w-full h-[600px] border border-qgray-border flex justify-center items-center overflow-hidden relative mb-3"><img src={productImg4} alt="" class="object-contain" />
                                             <div class="w-[80px] h-[80px] rounded-full bg-qyellow text-qblack flex justify-center items-center text-xl font-medium absolute left-[30px] top-[30px]"><span>-50%</span></div>
                                         </div>
                                         <div class="flex gap-2 flex-wrap">
-                                            <div class="w-[110px] h-[110px] p-[15px] border border-qgray-border cursor-pointer"><img src="/assets/images/product-details-1.png" alt="" class="w-full h-full object-contain  "/></div>
-                                            <div class="w-[110px] h-[110px] p-[15px] border border-qgray-border cursor-pointer"><img src="/assets/images/product-details-2.png" alt="" class="w-full h-full object-contain opacity-50 "/></div>
-                                            <div class="w-[110px] h-[110px] p-[15px] border border-qgray-border cursor-pointer"><img src="/assets/images/product-details-3.png" alt="" class="w-full h-full object-contain opacity-50 "/></div>
-                                            <div class="w-[110px] h-[110px] p-[15px] border border-qgray-border cursor-pointer"><img src="/assets/images/product-details-4.png" alt="" class="w-full h-full object-contain opacity-50 "/></div>
-                                            <div class="w-[110px] h-[110px] p-[15px] border border-qgray-border cursor-pointer"><img src="/assets/images/product-details-5.png" alt="" class="w-full h-full object-contain opacity-50 "/></div>
+                                            <div class="w-[110px] h-[110px] p-[15px] border border-qgray-border cursor-pointer"><img src={productImg2} alt="" class="w-full h-full object-contain  " /></div>
+                                            <div class="w-[110px] h-[110px] p-[15px] border border-qgray-border cursor-pointer"><img src={productImg3} alt="" class="w-full h-full object-contain opacity-50 " /></div>
+                                            <div class="w-[110px] h-[110px] p-[15px] border border-qgray-border cursor-pointer"><img src={productImg4} alt="" class="w-full h-full object-contain opacity-50 " /></div>
+                                            <div class="w-[110px] h-[110px] p-[15px] border border-qgray-border cursor-pointer"><img src={productImg5} alt="" class="w-full h-full object-contain opacity-50 " /></div>
+                                            <div class="w-[110px] h-[110px] p-[15px] border border-qgray-border cursor-pointer"><img src={productImg6} alt="" class="w-full h-full object-contain opacity-50 " /></div>
                                         </div>
                                     </div>
                                 </div>
@@ -36,27 +43,37 @@ const ProductDetails = () => {
                                         <div data-aos="fade-up" class="flex space-x-2 items-center mb-7 aos-init"><span class="text-sm font-500 text-qgray line-through mt-2">$9.99</span><span class="text-2xl font-500 text-qred">$6.99</span></div>
                                         <p data-aos="fade-up" class="text-qgray text-sm text-normal mb-[30px] leading-7 aos-init">It is a long established fact that a reader will be distracted by the readable there content of a page when looking at its layout.</p>
                                         <div data-aos="fade-up" class="colors mb-[30px] aos-init"><span class="text-sm font-normal uppercase text-qgray mb-[14px] inline-block">COLOR</span>
-                                            {/* <div class="flex space-x-4 items-center">
-                                                <div><button type="button" class="w-[20px] h-[20px]  rounded-full focus:ring-2  ring-offset-2 flex justify-center items-center" style={{ "--tw-ring-color": "#FFBC63" }}><span class="w-[20px] h-[20px] block rounded-full border" style={{"background": rgb(255, 188, 99)}}></span></button></div>
-                                                <div><button type="button" class="w-[20px] h-[20px]  rounded-full focus:ring-2  ring-offset-2 flex justify-center items-center" style={{ "--tw-ring-color": "#649EFF" }}><span class="w-[20px] h-[20px] block rounded-full border" style="background: rgb(100, 158, 255);"></span></button></div>
-                                                <div><button type="button" class="w-[20px] h-[20px]  rounded-full focus:ring-2  ring-offset-2 flex justify-center items-center" style={{ "--tw-ring-color": "#FFFFFF" }}><span class="w-[20px] h-[20px] block rounded-full border" style="background: rgb(255, 255, 255);"></span></button></div>
-                                                <div><button type="button" class="w-[20px] h-[20px]  rounded-full focus:ring-2  ring-offset-2 flex justify-center items-center" style="--tw-ring-color:#FF7173;"><span class="w-[20px] h-[20px] block rounded-full border" style="background: rgb(255, 113, 115);"></span></button></div>
+                                            <div class="flex space-x-4 items-center">
+                                                <div><button type="button" class="w-[20px] h-[20px]  rounded-full focus:ring-2  ring-offset-2 flex justify-center items-center" style={{ '--tw-ring-color': '#FFBC63' }}
+                                                ><span class="w-[20px] h-[20px] block rounded-full border" style={{ background: 'rgb(255, 188, 99)' }}
+                                                ></span></button></div>
+                                                <div><button type="button" class="w-[20px] h-[20px]  rounded-full focus:ring-2  ring-offset-2 flex justify-center items-center" style={{ "--tw-ring-color": "#649EFF" }}><span class="w-[20px] h-[20px] block rounded-full border" style={{ background: 'rgb(100, 158, 255)' }}
+                                                ></span></button></div>
+                                                <div><button type="button" class="w-[20px] h-[20px]  rounded-full focus:ring-2  ring-offset-2 flex justify-center items-center" style={{ "--tw-ring-color": "#FFFFFF" }}><span class="w-[20px] h-[20px] block rounded-full border" style={{ background: 'rgb(255, 255, 255)' }}
+                                                ></span></button></div>
+                                                <div><button type="button" class="w-[20px] h-[20px]  rounded-full focus:ring-2  ring-offset-2 flex justify-center items-center" style={{ '--tw-ring-color': '#FF7173' }}
+                                                ><span class="w-[20px] h-[20px] block rounded-full border" style={{ background: 'rgb(255, 113, 115)' }}
+                                                ></span></button></div>
                                                 <div></div>
-                                            </div> */}
+                                            </div>
                                         </div>
                                         <div data-aos="fade-up" class="product-size mb-[30px] aos-init"><span class="text-sm font-normal uppercase text-qgray mb-[14px] inline-block">SIZE</span>
-                                            <div class="w-full">
-                                                <div class=" border border-qgray-border h-[50px] flex justify-between items-center px-6 cursor-pointer">
-                                                    <div class="my-select-box w-full"><button type="button" class="my-select-box-btn "><div><span class="text-[13px] text-qblack">Small</span></div><div class="flex space-x-10 items-center"><span class="text-[13px] text-qblack">3”W x 3”D x 7”H</span><span><svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.4 6.8L0 1.4L1.4 0L5.4 4L9.4 0L10.8 1.4L5.4 6.8Z" fill="#222222"></path></svg></span></div></button>
-                                                        <div class="my-select-box-section ">
-                                                            <ul class="list">
-                                                                <li class="selected">Small</li>
-                                                                <li class="">Medium</li>
-                                                                <li class="">Large</li>
-                                                                <li class="">Extra Large</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
+                                            <div>
+                                                <div className="form-control w-full max-w-xs">
+                                                    <label className="label">
+                                                        <span className="label-text">Pick the best size that suite you</span>
+
+                                                    </label>
+                                                    <select className="select select-bordered">
+                                                        <option disabled selected>Pick one</option>
+                                                        <option>Large</option>
+                                                        <option>Small</option>
+                                                        <option>Medium</option>
+                                                    </select>
+                                                    <label className="label">
+
+
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
@@ -64,8 +81,8 @@ const ProductDetails = () => {
                                             <div class="w-[120px] h-full px-[26px] flex items-center border border-qgray-border">
                                                 <div class="flex justify-between items-center w-full"><button type="button" class="text-base text-qgray">-</button><span class="text-qblack">1</span><button type="button" class="text-base text-qgray">+</button></div>
                                             </div>
-                                            <div class="w-[60px] h-full flex justify-center items-center border border-qgray-border"><button type="button"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1C14.9 1 13.1 2.1 12 3.7C10.9 2.1 9.1 1 7 1C3.7 1 1 3.7 1 7C1 13 12 22 12 22C12 22 23 13 23 7C23 3.7 20.3 1 17 1Z" stroke="#D5D5D5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path></svg></span></button></div>
-                                            <div class="flex-1 h-full"><button type="button" class="black-btn text-sm font-semibold w-full h-full">Add To Cart</button></div>
+                                            <div class="w-[40px] h-full flex justify-center items-center border border-qgray-border"><button type="button"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 1C14.9 1 13.1 2.1 12 3.7C10.9 2.1 9.1 1 7 1C3.7 1 1 3.7 1 7C1 13 12 22 12 22C12 22 23 13 23 7C23 3.7 20.3 1 17 1Z" stroke="#D5D5D5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path></svg></span></button></div>
+                                            <div class="flex-1 h-full"><button type="button" class="black-btn text-sm font-semibold w-6/12 h-full">Add To Cart</button></div>
                                         </div>
                                         <div data-aos="fade-up" class="mb-[20px] aos-init">
                                             <p class="text-[13px] text-qgray leading-7"><span class="text-qblack">Category :</span> Kitchen</p>
@@ -117,8 +134,8 @@ const ProductDetails = () => {
                             <h1 class="sm:text-3xl text-xl font-600 text-qblacktext leading-none mb-[30px]">Related Product</h1>
                             <div data-aos="fade-up" class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-[30px] gap-5 aos-init">
                                 <div class="item">
-                                    <div class="product-card-one w-full h-full bg-white relative group overflow-hidden" style="box-shadow: rgba(0, 0, 0, 0.05) 0px 15px 64px 0px;">
-                                        <div class="product-card-img w-full h-[300px]" style="background: url(&quot;/assets/images/product-img-6.jpg&quot;) center center no-repeat;"></div>
+                                    <div class="product-card-one w-full h-full bg-white relative group overflow-hidden" style={{ boxShadow: 'rgba(0, 0, 0, 0.05) 0px 15px 64px 0px' }}>
+                                        <div class="product-card-img w-full h-[300px]" style={{ background: `url(${productImg5}) center center no-repeat` }}></div>
                                         <div class="product-card-details px-[30px] pb-[30px] relative">
                                             <div class="absolute w-full h-10 px-[30px] left-0 top-40 group-hover:top-[85px] transition-all duration-300 ease-in-out"><button type="button" class="yellow-btn"><div class="flex items-center space-x-3"><span><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-current"><path d="M12.5664 4.14176C12.4665 3.87701 12.2378 3.85413 11.1135 3.85413H10.1792V3.43576C10.1792 2.78532 10.089 2.33099 9.86993 1.86359C9.47367 1.01704 8.81003 0.425438 7.94986 0.150881C7.53106 0.0201398 6.90607 -0.0354253 6.52592 0.0234083C5.47246 0.193372 4.57364 0.876496 4.11617 1.85052C3.89389 2.32772 3.80368 2.78532 3.80368 3.43576V3.8574H2.8662C1.74187 3.8574 1.51313 3.88028 1.41326 4.15483C1.36172 4.32807 0.878481 8.05093 0.6723 9.65578C0.491891 11.0547 0.324369 12.3752 0.201948 13.3688C-0.0106763 15.0815 -0.00423318 15.1077 0.00220999 15.1371V15.1404C0.0312043 15.2515 0.317925 15.5424 0.404908 15.6274L0.781834 16H13.1785L13.4588 15.7483C13.5844 15.6339 14 15.245 14 15.0521C14 14.9214 12.5922 4.21694 12.5664 4.14176ZM12.982 14.8037C12.9788 14.8266 12.953 14.8952 12.9079 14.9443L12.8435 15.0162H1.13943L0.971907 14.8331L1.63233 9.82901C1.86429 8.04766 2.07047 6.4951 2.19289 5.56684C2.24766 5.16154 2.27343 4.95563 2.28631 4.8543C2.72123 4.85103 4.62196 4.84776 6.98661 4.84776H11.6901L11.6966 4.88372C11.7481 5.1452 12.9594 14.5128 12.982 14.8037ZM4.77338 3.8574V3.48479C4.77338 3.23311 4.80559 2.88664 4.84103 2.72649C5.03111 1.90935 5.67864 1.24584 6.48726 1.03339C6.82553 0.948403 7.37964 0.97782 7.71791 1.10202H7.72113C8.0755 1.22296 8.36545 1.41907 8.63284 1.71978C9.06453 2.19698 9.2095 2.62516 9.2095 3.41615V3.8574H4.77338Z"></path></svg></span><span>Add To Cart</span></div></button></div>
                                             <div class="reviews flex space-x-[1px] mb-3"><span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FFA800"></path></svg></span><span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FFA800"></path></svg></span><span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FFA800"></path></svg></span><span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FFA800"></path></svg></span><span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FFA800"></path></svg></span></div>
@@ -131,8 +148,10 @@ const ProductDetails = () => {
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="product-card-one w-full h-full bg-white relative group overflow-hidden" style="box-shadow: rgba(0, 0, 0, 0.05) 0px 15px 64px 0px;">
-                                        <div class="product-card-img w-full h-[300px]" style="background: url(&quot;/assets/images/product-img-7.jpg&quot;) center center no-repeat;">
+                                    <div class="product-card-one w-full h-full bg-white relative group overflow-hidden" style={{ boxShadow: 'rgba(0, 0, 0, 0.05) 0px 15px 64px 0px' }}
+                                    >
+                                        <div class="product-card-img w-full h-[300px]" style={{ background: `url(${productImg2}) center center no-repeat` }}
+                                        >
                                             <div class="product-type absolute right-[14px] top-[17px]"><span class="text-[9px] font-700 leading-none py-[6px] px-3 uppercase text-white rounded-full tracking-wider bg-qyellow">new</span></div>
                                         </div>
                                         <div class="product-card-details px-[30px] pb-[30px] relative">
@@ -147,13 +166,15 @@ const ProductDetails = () => {
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="product-card-one w-full h-full bg-white relative group overflow-hidden" style="box-shadow: rgba(0, 0, 0, 0.05) 0px 15px 64px 0px;">
-                                        <div class="product-card-img w-full h-[300px]" style="background: url(&quot;/assets/images/product-img-8.jpg&quot;) center center no-repeat;">
+                                    <div class="product-card-one w-full h-full bg-white relative group overflow-hidden" style={{ boxShadow: 'rgba(0, 0, 0, 0.05) 0px 15px 64px 0px' }}>
+                                        <div class="product-card-img w-full h-[300px]" style={{ background: `url(${productImg7}) center center no-repeat` }}
+                                        >
                                             <div class="px-[30px] absolute left-0 top-3 w-full">
                                                 <div class="progress-title flex justify-between ">
                                                     <p class="text-xs text-qblack font-400 leading-6">Prodcuts Available</p><span class="text-sm text-qblack font-600 leading-6">19</span></div>
                                                 <div class="progress w-full h-[5px] rounded-[22px] bg-primarygray relative overflow-hidden">
-                                                    <div class="h-full absolute left-0 top-0  bg-qyellow" style="width: 65.5172%;"></div>
+                                                    <div class="h-full absolute left-0 top-0  bg-qyellow" style={{ width: '65.5172%' }}
+                                                    ></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -169,8 +190,9 @@ const ProductDetails = () => {
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="product-card-one w-full h-full bg-white relative group overflow-hidden" style="box-shadow: rgba(0, 0, 0, 0.05) 0px 15px 64px 0px;">
-                                        <div class="product-card-img w-full h-[300px]" style="background: url(&quot;/assets/images/product-img-9.jpg&quot;) center center no-repeat;"></div>
+                                    <div class="product-card-one w-full h-full bg-white relative group overflow-hidden" style={{ boxShadow: 'rgba(0, 0, 0, 0.05) 0px 15px 64px 0px' }}
+                                    >
+                                        <div class="product-card-img w-full h-[300px]" style={{ background: `url(${productImg3}) center center no-repeat` }}></div>
                                         <div class="product-card-details px-[30px] pb-[30px] relative">
                                             <div class="absolute w-full h-10 px-[30px] left-0 top-40 group-hover:top-[85px] transition-all duration-300 ease-in-out"><button type="button" class="yellow-btn"><div class="flex items-center space-x-3"><span><svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="fill-current"><path d="M12.5664 4.14176C12.4665 3.87701 12.2378 3.85413 11.1135 3.85413H10.1792V3.43576C10.1792 2.78532 10.089 2.33099 9.86993 1.86359C9.47367 1.01704 8.81003 0.425438 7.94986 0.150881C7.53106 0.0201398 6.90607 -0.0354253 6.52592 0.0234083C5.47246 0.193372 4.57364 0.876496 4.11617 1.85052C3.89389 2.32772 3.80368 2.78532 3.80368 3.43576V3.8574H2.8662C1.74187 3.8574 1.51313 3.88028 1.41326 4.15483C1.36172 4.32807 0.878481 8.05093 0.6723 9.65578C0.491891 11.0547 0.324369 12.3752 0.201948 13.3688C-0.0106763 15.0815 -0.00423318 15.1077 0.00220999 15.1371V15.1404C0.0312043 15.2515 0.317925 15.5424 0.404908 15.6274L0.781834 16H13.1785L13.4588 15.7483C13.5844 15.6339 14 15.245 14 15.0521C14 14.9214 12.5922 4.21694 12.5664 4.14176ZM12.982 14.8037C12.9788 14.8266 12.953 14.8952 12.9079 14.9443L12.8435 15.0162H1.13943L0.971907 14.8331L1.63233 9.82901C1.86429 8.04766 2.07047 6.4951 2.19289 5.56684C2.24766 5.16154 2.27343 4.95563 2.28631 4.8543C2.72123 4.85103 4.62196 4.84776 6.98661 4.84776H11.6901L11.6966 4.88372C11.7481 5.1452 12.9594 14.5128 12.982 14.8037ZM4.77338 3.8574V3.48479C4.77338 3.23311 4.80559 2.88664 4.84103 2.72649C5.03111 1.90935 5.67864 1.24584 6.48726 1.03339C6.82553 0.948403 7.37964 0.97782 7.71791 1.10202H7.72113C8.0755 1.22296 8.36545 1.41907 8.63284 1.71978C9.06453 2.19698 9.2095 2.62516 9.2095 3.41615V3.8574H4.77338Z"></path></svg></span><span>Add To Cart</span></div></button></div>
                                             <div class="reviews flex space-x-[1px] mb-3"><span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FFA800"></path></svg></span><span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FFA800"></path></svg></span><span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FFA800"></path></svg></span><span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FFA800"></path></svg></span><span><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 0L11.0206 6.21885H17.5595L12.2694 10.0623L14.2901 16.2812L9 12.4377L3.70993 16.2812L5.73056 10.0623L0.440492 6.21885H6.97937L9 0Z" fill="#FFA800"></path></svg></span></div>
