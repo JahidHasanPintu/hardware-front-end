@@ -4,7 +4,7 @@ import Breadcumbs from '../../../Shared/Breadcumbs/Breadcumbs';
 const PrivacyPolicy = () => {
     return (
         <div>
-            <Breadcumbs />
+            <Breadcumbs name={'Privacy Policy'} path={'/privacy-policy'} />
             <div className="w-11/12 mx-auto text-start">
                 <div className="container-x mx-auto">
                     <div className="content-item w-full mb-10">
