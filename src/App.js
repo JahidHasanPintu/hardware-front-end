@@ -11,6 +11,7 @@ import About from './Components/Pages/About/About';
 import Checkout from './Components/Pages/Checkout/Checkout';
 import ProductDetails from './Components/ProductDetails/ProductDetails';
 import ProdDetails from './Components/ProdDetails/ProdDetails';
+import AllProducts from './Components/AllProducts/AllProducts';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/checkout" element={<Checkout />}></Route>
         <Route path="/product-details" element={<ProductDetails />}></Route>
+        <Route path="/all-product" element={<AllProducts />}></Route>
         <Route path="/prod-details" element={<ProdDetails />}></Route>
         <Route path="/prod-details/:ID" element={<ProdDetails />}></Route>
 
