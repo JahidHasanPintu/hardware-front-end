@@ -63,7 +63,7 @@ const BlogDetails = () => {
                                     </div>
                                     <div className="w-full mb-[30px]">
                                         <h6 className="input-label text-qgray capitalize text-[13px] font-normal block mb-2 ">Message*</h6><textarea name="" id="" cols="30" rows="3" className="w-full focus:ring-0 focus:outline-none p-6"></textarea></div>
-                                    <div className="flex justify-end"><button type="button" className="black-btn w-[300px] h-[50px]  flex justify-center"><span className="flex space-x-1 items-center h-full"><span className="text-sm font-semibold">Submit Review</span></span></button></div>
+                                    <div className="flex justify-end"><button type="button" className="primary-button-color w-[300px] h-[50px]  flex justify-center"><span className="flex space-x-1 items-center h-full"><span className="text-sm font-semibold">Submit Review</span></span></button></div>
                                 </div>
                             </div>
                             <div className="w-full comments">
@@ -165,7 +165,7 @@ const BlogDetails = () => {
                     <h1 className="text-[22px] text-qblack font-bold mb-5">Popular Tags</h1>
                     <div className="w-full h-[1px] bg-[#DCDCDC] mb-5"></div>
                     <div className="filter-items">
-                        <div className="flex gap-[10px] flex-wrap"><span className="text-base bg-[#F9F3E9] hover:bg-qyellow text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Agency</span><span className="text-base bg-[#F9F3E9] hover:bg-qyellow text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Creative</span><span className="text-base bg-[#F9F3E9] hover:bg-qyellow text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Data</span><span className="text-base bg-[#F9F3E9] hover:bg-qyellow text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Technology</span><span className="text-base bg-[#F9F3E9] hover:bg-qyellow text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Development</span><span className="text-base bg-[#F9F3E9] hover:bg-qyellow text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Business</span><span className="text-base bg-[#F9F3E9] hover:bg-qyellow text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Idea</span><span className="text-base bg-[#F9F3E9] hover:bg-qyellow text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Generic</span></div>
+                        <div className="flex gap-[10px] flex-wrap"><span className="text-base bg-[#F9F3E9] hover:primary-bg-color text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Agency</span><span className="text-base bg-[#F9F3E9] hover:primary-bg-color text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Creative</span><span className="text-base bg-[#F9F3E9] hover:primary-bg-color text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Data</span><span className="text-base bg-[#F9F3E9] hover:primary-bg-color text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Technology</span><span className="text-base bg-[#F9F3E9] hover:primary-bg-color text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Development</span><span className="text-base bg-[#F9F3E9] hover:primary-bg-color text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Business</span><span className="text-base bg-[#F9F3E9] hover:primary-bg-color text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Idea</span><span className="text-base bg-[#F9F3E9] hover:primary-bg-color text-[#9A9A9A] hover:text-qblack px-[14px] py-[6px] cursor-pointer mb-[5px]">Generic</span></div>
                     </div>
                 </div>
                 <div data-aos="fade-up" className="w-full h-[358px] aos-init aos-animate" >
@@ -176,7 +176,7 @@ const BlogDetails = () => {
                             <p className="text-base text-white leading-[26px] line-clamp-2">Follow our newsletter to stay updated about us.</p>
                         </div>
                         <div>
-                            <div className="w-full mb-3.5"><input type="text" className="w-full h-[60px] bg-[#ECEAEC] pl-5 focus:outline-none focus:ring-0 placeholder:text-[#9A9A9A]" placeholder="Enter Your Email Address"/></div><button type="button" className="w-full h-[60px]"><span className="yellow-btn w-full h-full"
+                            <div className="w-full mb-3.5"><input type="text" className="w-full h-[60px] bg-[#ECEAEC] pl-5 focus:outline-none focus:ring-0 placeholder:text-[#9A9A9A]" placeholder="Enter Your Email Address"/></div><button type="button" className="w-full h-[60px]"><span className="product-button w-full h-full"
                             style={{fontSize: '18px'}}
                             >Subscribe</span></button></div>
                     </div>

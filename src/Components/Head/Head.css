@@ -24,12 +24,8 @@
     font-weight: 600;
     --tw-bg-opacity: 1;
     --tw-text-opacity: 1;
-    background-color: rgb(255 187 56/var(--tw-bg-opacity));
-    color: rgb(34 34 34/var(--tw-text-opacity));
-}
-.bg-qyellow {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 187 56/var(--tw-bg-opacity));
+    /* background-color: rgb(255 187 56/var(--tw-bg-opacity));
+    color: rgb(34 34 34/var(--tw-text-opacity)); */
 }
 .font-600 {
     font-weight: 600;
@@ -38,12 +34,12 @@
     font-size: .875rem;
     line-height: 1.25rem;
 }
-.black-btn {
+/* .primary-button-color {
     --tw-bg-opacity: 1;
     --tw-text-opacity: 1;
     background-color: rgb(34 34 34/var(--tw-bg-opacity));
     color: rgb(255 255 255/var(--tw-text-opacity));
-}
+} */
 .gray-btn {
     align-items: center;
     background: #f0f1f3;

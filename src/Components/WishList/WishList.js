@@ -8,7 +8,7 @@ const WishList = () => {
     return (
         <div>
             <Breadcumbs name={'Wishlist'} path={'/wishlist'}/>
-            <div className="w-full mt-[23px]">
+            <div className="w-full mt-[23px] mb-5">
                 <div className="container-x text-start w-10/12 mx-auto">
                     <div className="w-full mb-[30px]">
                         <div className="relative w-full overflow-x-auto border border-[#EDEDED]">
@@ -125,7 +125,7 @@ const WishList = () => {
                     </div>
                     <div className="w-full mt-[30px] flex sm:justify-end justify-start">
                         <div className="sm:flex sm:space-x-[30px] items-center"><button type="button"><div className="w-full text-sm font-semibold text-qred mb-5 sm:mb-0">Clean Wishlist</div></button>
-                            <div className="w-[180px] h-[50px]"><button type="button" className="yellow-btn"><div className="w-full text-sm font-semibold">Add to Cart All</div></button></div>
+                            <div className="w-[180px] h-[50px]"><button type="button" className="product-button"><div className="w-full text-sm font-semibold">Add to Cart All</div></button></div>
                         </div>
                     </div>
                 </div>

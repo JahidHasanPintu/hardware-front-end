@@ -11,7 +11,7 @@
 .product-card-img{
     background: url(../../assets/products/product-img-1.jpg) center center no-repeat;
 }
-.blue-btn, .yellow-btn {
+.blue-btn, .product-button {
     --tw-bg-opacity: 1;
     --tw-text-opacity: 1;
     align-items: center;
@@ -23,10 +23,10 @@
     line-height: 0;
     width: 100%;
 }
-.yellow-btn {
+/* .product-button {
     background-color: rgb(255 187 56/var(--tw-bg-opacity));
     color: rgb(29 29 29/var(--tw-text-opacity));
-}
+} */
 /* style="background: url(&quot;../../../../assets/products/product-img-2.jpg&quot;) center center no-repeat;
 
 style="background: url(&quot;../../../../assets/products/product-img-3.jpg&quot;) center center no-repeat;" */

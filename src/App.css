@@ -39,13 +39,26 @@
 
 .primary-bg-color{
     --tw-bg-opacity: 1;
-    background-color: rgb(255 187 56/var(--tw-bg-opacity));
+    /* background-color: rgb(250 204 21 / var(--tw-bg-opacity)); */
+    background-color: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
+    color: white;
+    /* background-color: red; */
 }
+
 .secondary-bg-color{
   
 }
 
 .primary-button-color{
-  background-color: rgb(34 34 34/var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+    --tw-text-opacity: 1;
+    background-color: rgb(34 34 34/var(--tw-bg-opacity));
+    /* background-color: red; */
     color: rgb(255 255 255/var(--tw-text-opacity));
+}
+.product-button{
+  background-color: hsl(var(--pf, var(--p)) / var(--tw-bg-opacity));
+  /* background-color: red; */
+    color: white;
+
 }

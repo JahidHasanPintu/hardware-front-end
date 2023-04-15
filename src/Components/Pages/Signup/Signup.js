@@ -56,7 +56,7 @@ const Signup = () => {
                                         </div>
                                     </div>
                                     <div className="signin-area mb-3">
-                                        <div className="flex justify-center"><button type="button" className="black-btn text-sm text-white w-full h-[50px] font-semibold flex justify-center bg-purple items-center"><span>Create Account</span></button></div>
+                                        <div className="flex justify-center"><button type="button" className="primary-button-color text-sm text-white w-full h-[50px] font-semibold flex justify-center bg-purple items-center"><span>Create Account</span></button></div>
                                     </div>
                                     <div className="signup-area flex justify-center">
                                         <p className="text-base text-qgraytwo font-normal">Alrady have an Account?<a href="/login" className="ml-2 text-qblack">Log In</a></p>

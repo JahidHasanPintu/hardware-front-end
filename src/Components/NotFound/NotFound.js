@@ -11,7 +11,7 @@ const NotFound = () => {
                             <h1 className="sm:text-xl text-base font-semibold text-center mb-5">Sorry! We cant’t Find that page!</h1>
                             <a href="/">
                                 <div className="flex justify-center w-full ">
-                                    <div className="w-[180px] h-[50px] "><span type="button" className="yellow-btn">Back to Shop</span></div>
+                                    <div className="w-[180px] h-[50px] "><span type="button" className="product-button">Back to Shop</span></div>
                                 </div>
                             </a>
                         </div>

@@ -21,7 +21,7 @@ const About = () => {
                                 <li>NVIDIA GeForce MX350 2GB GDDR5 graphics card backlit keyboard</li>
                             </ul>
                             <a href="/contact">
-                                <div className="w-[121px] h-10"><span className="yellow-btn">Contact Us</span></div>
+                                <div className="w-[121px] h-10"><span className="product-button">Contact Us</span></div>
                             </a>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ const About = () => {
                             </div>
                         </div><button type="button" data-role="none" className="slick-arrow slick-next" style={{ display: 'block' }}> Next</button></div>
                     <div className="slider-btns flex justify-center mt-[40px]">
-                        <div className="flex space-x-5 item-center"><button type="button" className="w-[48px] h-[48px] rounded-full overflow-hidden flex justify-center items-center border border-qyellow text-qyellow focus:bg-qyellow focus:text-white"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"></path></svg></button><button type="button" className="w-[48px] h-[48px] rounded-full overflow-hidden flex justify-center items-center border border-qyellow text-qyellow focus:bg-qyellow focus:text-white"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 transform rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"></path></svg></button></div>
+                        <div className="flex space-x-5 item-center"><button type="button" className="w-[48px] h-[48px] rounded-full overflow-hidden flex justify-center items-center border border-qyellow text-qyellow focus:primary-bg-color focus:text-white"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"></path></svg></button><button type="button" className="w-[48px] h-[48px] rounded-full overflow-hidden flex justify-center items-center border border-qyellow text-qyellow focus:primary-bg-color focus:text-white"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 transform rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"></path></svg></button></div>
                     </div>
                 </div>
             </div>
