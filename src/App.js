@@ -21,6 +21,7 @@ import WishList from './Components/WishList/WishList';
 import Blogs from './Components/Blogs/Blogs';
 import NotFound from './Components/NotFound/NotFound';
 import BlogDetails from './Components/Blogs/BlogDetails';
+import Account from './Components/Account/Account';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/terms-condition" element={<Terms />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/faq" element={<Faq />}></Route>
+        <Route path="/account" element={<Account />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>

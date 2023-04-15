@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.primary-bg-color{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 187 56/var(--tw-bg-opacity));
+}
+.secondary-bg-color{
+  
+}
+
+.primary-button-color{
+  background-color: rgb(34 34 34/var(--tw-bg-opacity));
+    color: rgb(255 255 255/var(--tw-text-opacity));
+}

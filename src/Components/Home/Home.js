@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import Brands from '../Brands/Brands';
-import Categories from '../Categories/Categories';
+// import Categories from '../Categories/Categories';
 import Features from '../Features/Features';
 import NewsLetter from '../NewsLetter/NewsLetter';
 import PopularSale from '../PopularSale/PopularSale';

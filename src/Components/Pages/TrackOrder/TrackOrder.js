@@ -13,12 +13,12 @@ const TrackOrder = () => {
                         <div className="lg:w-[642px] w-full">
                             <div className="mb-3">
                                 <div className="input-com w-full h-full"><label className="input-label capitalize block  mb-2 text-qgray text-[13px] font-normal">Order Tracking Number*</label>
-                                    <div className="input-wrapper border border-qgray-border w-full h-full overflow-hidden relative "><input placeholder="Order Number" className="input-field placeholder:text-sm text-sm px-6 text-dark-gray w-full h-full font-normal bg-white focus:ring-0 focus:outline-none w-full h-[50px]" defaultValue=""/></div>
+                                    <div className="input-wrapper border border-qgray-border w-full h-full overflow-hidden relative "><input placeholder="Order Number" className="input-field placeholder:text-sm text-sm px-6 text-dark-gray w-full font-normal bg-white focus:ring-0 focus:outline-none w-full h-[50px]" defaultValue=""/></div>
                                 </div>
                             </div>
                             <div className="mb-[30px]">
                                 <div className="input-com w-full h-full"><label className="input-label capitalize block  mb-2 text-qgray text-[13px] font-normal">Delivery Date</label>
-                                    <div className="input-wrapper border border-qgray-border w-full h-full overflow-hidden relative "><input placeholder="23/09/2022" className="input-field placeholder:text-sm text-sm px-6 text-dark-gray w-full h-full font-normal bg-white focus:ring-0 focus:outline-none w-full h-[50px]" defaultValue=""/></div>
+                                    <div className="input-wrapper border border-qgray-border w-full h-full overflow-hidden relative "><input placeholder="23/09/2022" className="input-field placeholder:text-sm text-sm px-6 text-dark-gray w-full font-normal bg-white focus:ring-0 focus:outline-none w-full h-[50px]" defaultValue=""/></div>
                                 </div>
                             </div>
                             <a href="/">
