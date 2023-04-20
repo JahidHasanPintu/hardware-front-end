@@ -7,6 +7,7 @@ import PopularSale from '../PopularSale/PopularSale';
 import TrendySales from '../TrendySales/TrendySales';
 import NewArrival from '../NewArrival/NewArrival';
 import PopularProducts from '../PopularProducts/PopularProducts';
+import Categories from '../Categories/Categories';
 
 
 const Home = () => {
@@ -32,7 +33,7 @@ const Home = () => {
 
             <Features />
             <TrendySales />
-            <Brands />
+            <Categories />
             <PopularProducts/>
             <Brands />
             <NewArrival />
