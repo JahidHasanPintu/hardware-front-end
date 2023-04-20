@@ -13,6 +13,8 @@ const TrendySales = () => {
     const [limit, setLimit] = useState(12);
     const [products, totalPages] = useProducts(page, limit, search, brandID, catID, subcatID);
 
+   
+
     return (
         <div>
             <div className="section-wrapper w-11/12 mx-auto ">
