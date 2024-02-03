@@ -2,22 +2,41 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { getApiUrl } from "../api/apiURL";
 
-export const useProducts = (page, limit, search, brandID, catID, subcatID) => {
+export const useProducts = (page, limit, search, brandID, catID, subcatID, sort,offer) => {
   const [products, setProducts] = useState([]);
-  const [totalPages, setTotalPages] = useState(0);
+  const [total, setTotal] = useState(0);
+  const [loading,setLoading] = useState(false);
 
   useEffect(() => {
+    
     const baseURL = getApiUrl();
     const getAllProducts = async () => {
+      setLoading(true);
       try {
+        let brandIdString = '';
+        let catIdString = '';
+
+        if (Array.isArray(brandID)) {
+          brandIdString = brandID.join(',');
+        }else{
+          brandIdString = brandID;
+        }
+
+        if (Array.isArray(catID)) {
+          catIdString = catID.join(',');
+        }else{
+          catIdString = catID;
+        }
         const response = await axios.get(`${baseURL}/products`, {
           params: {
             page,
             limit,
             search,
-            brand_id: brandID,
-            cat_id: catID,
+            brand_id:brandIdString,
+            cat_id: catIdString,
             subcat_id: subcatID,
+            sort,
+            offer,
           },
         });
 
@@ -25,16 +44,18 @@ export const useProducts = (page, limit, search, brandID, catID, subcatID) => {
 
         if (success) {
           setProducts(data);
-          setTotalPages(totalItem);
+          setTotal(totalItem);
         } else {
           console.error("Error fetching data");
         }
       } catch (error) {
         console.error("Error fetching data", error);
       }
+      setLoading(false);
     };
     getAllProducts();
-  }, [page, limit, search, brandID, catID, subcatID]);
+    
+  }, [page, limit, search, brandID, catID, subcatID, sort,offer]);
 
-  return [ products, totalPages ];
+  return [products, total,loading];
 };

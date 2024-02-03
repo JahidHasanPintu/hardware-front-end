@@ -1,0 +1,18 @@
+import React from 'react';
+import add4 from '../../assets/images/ads-4.png';
+
+const BannersAd = () => {
+    return (
+        <div>
+            <div className="w-11/12 mx-auto mt-5 products-ads-section mb-[60px]">
+                <div className="container-x mx-auto">
+                    <div className="164  items-center w-full  overflow-hidden">
+                        <div data-aos="fade-right" className="h-full sm:mb-0 mb-5 w-full aos-init aos-animate"><a href="/single-product"><img src={add4} alt="" className="w-full sm:h-full h-auto"/></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default BannersAd;

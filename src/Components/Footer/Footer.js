@@ -1,42 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import payment from '../../assets/images/payment-getways.png';
+import MobileAppIcon from '../../assets/icons/Icons-App-Store-Google-play.png';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+    const { t } = useTranslation();
     return (
         <div>
             <footer className="footer p-10 bg-base-200 text-base-content">
                 <div>
-                    <span className="footer-title">Services</span> 
-                    <Link to =" " className="link link-hover">Branding</Link> 
-                    <Link to =" " className="link link-hover">Design</Link> 
-                    <Link to =" " className="link link-hover">Marketing</Link> 
-                    <Link to =" " className="link link-hover">Advertisement</Link>
+                    <span className="footer-title">{t('COMPANY')}</span> 
+                    <Link to ="/about" className="link link-hover">{t('About')}</Link> 
+                    <Link to ="/contact" className="link link-hover">{t('Contact')}</Link> 
+                    <Link to =" " className="link link-hover">{t('Latest')}</Link> 
                 </div> 
                 <div>
-                    <span className="footer-title">Company</span> 
-                    <Link to =" " className="link link-hover">About us</Link> 
-                    <Link to =" " className="link link-hover">Contact</Link> 
-                    <Link to =" " className="link link-hover">Jobs</Link> 
-                    <Link to =" " className="link link-hover">Press kit</Link>
+                    <span className="footer-title">{t('LEGAL')}</span> 
+                    <Link to ="/terms-condition" className="link link-hover">{t('Terms')}</Link> 
+                    <Link to ="/privacy-policy" className="link link-hover">{t('Privacy')} </Link> 
+                    <Link to =" " className="link link-hover">{t('Cookie')}</Link>
                 </div> 
+                
                 <div>
-                    <span className="footer-title">Legal</span> 
-                    <Link to =" " className="link link-hover">Terms of use</Link> 
-                    <Link to =" " className="link link-hover">Privacy policy</Link> 
-                    <Link to =" " className="link link-hover">Cookie policy</Link>
-                </div> 
+                    <span className="footer-title">{t('DOWNLOAD')}</span> 
+                    <img src={MobileAppIcon} className='w-[200px]' alt='app icon'/>
+                </div>
                 <div>
-                    <span className="footer-title">Newsletter</span> 
-                    <div className="form-control w-80">
-                    <label className="label">
-                        <span className="label-text">Enter your email address</span>
-                    </label> 
-                    <div className="relative">
-                        <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" /> 
-                        <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
-                    </div>
-                    </div>
+                    <span className="footer-title">{t('SCAN')}</span>
+                    <img src="https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fdattahardware.geniushubbd.com%2F&chs=180x180&choe=UTF-8&chld=L|2" className='w-[150px]' alt='qr code'/>
+                    
                 </div>
                 </footer>
                 <footer className="footer footer-center p-4 bg-base-300 text-base-content">

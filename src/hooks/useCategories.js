@@ -5,10 +5,11 @@ import { getApiUrl } from "../api/apiURL";
 export const useCategories = (page, limit, search, status) => {
   const [categories, setCategories] = useState([]);
   const [totalPages, setTotalPages] = useState(0);
-
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     const baseURL = getApiUrl();
     const getAllCategories = async () => {
+      setLoading(true);
       try {
         const response = await axios.get(`${baseURL}/categories`, {
           params: {
@@ -30,9 +31,10 @@ export const useCategories = (page, limit, search, status) => {
       } catch (error) {
         console.error("Error fetching data", error);
       }
+      setLoading(false);
     };
     getAllCategories();
   }, [page, limit, search, status]);
 
-  return [ categories, totalPages ];
+  return [ categories, totalPages, loading ];
 };
